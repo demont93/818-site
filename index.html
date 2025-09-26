@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>818 Consulting Corp</title>
+  <meta name="description" content="818 Consulting Corp — software, data, and AI systems for select partners." />
+  <meta property="og:title" content="818 Consulting Corp" />
+  <meta property="og:description" content="Software, data, and AI systems for select partners." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og.png" />
+  <style>
+    :root{
+      --bg: #0b0c10; --card: #111217; --text:#e6e6e6; --muted:#a7adba; --accent:#79ffe1;
+      --link:#79ffe1; --border:#1b1e27;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      color:var(--text); background:radial-gradient(1200px 800px at 80% -10%, #18212b 0%, var(--bg) 40%);
+      display:flex; align-items:center; justify-content:center; padding:24px;
+    }
+    main{width:100%; max-width:880px; background:var(--card); border:1px solid var(--border); border-radius:24px; padding:28px; box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    header{display:flex; align-items:center; gap:14px; border-bottom:1px solid var(--border); padding-bottom:18px; margin-bottom:22px}
+    .logo{width:42px; height:42px; border-radius:12px; display:grid; place-items:center; font-weight:800; background:linear-gradient(135deg,#2dd4bf,#60a5fa)}
+    h1{margin:0;font-size:1.35rem;letter-spacing:.2px}
+    p{line-height:1.6; color:var(--muted)}
+    .grid{display:grid; grid-template-columns:1fr; gap:18px}
+    .card{padding:18px;border:1px solid var(--border);border-radius:16px;background:#0f1117}
+    .btns{display:flex; flex-wrap:wrap; gap:10px; margin-top:8px}
+    a.button{display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid var(--border); text-decoration:none; color:var(--text); background:#0c0f16}
+    a.button:hover{border-color:#263041}
+    footer{display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between; align-items:center; border-top:1px solid var(--border); margin-top:18px; padding-top:18px; color:var(--muted)}
+    nav a{color:var(--link); text-decoration:none}
+    nav a:hover{text-decoration:underline}
+    @media (min-width: 720px){ .grid{grid-template-columns:1fr 1fr} }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="logo">818</div>
+      <div>
+        <h1>818 Consulting Corp</h1>
+        <p>Software, data, and AI systems — built for select partners.</p>
+      </div>
+    </header>
+
+    <section class="grid">
+      <div class="card">
+        <h2 style="margin-top:0">About</h2>
+        <p>We design, build, and operate internal tools and bespoke apps. We do not market to the public.</p>
+        <div class="btns">
+          <a class="button" href="#apps">Our App</a>
+          <a class="button" href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="card">
+        <h2 style="margin-top:0">Compliance</h2>
+        <p>For platform partners and reviewers: this site hosts our <a href="/privacy.html">Privacy Policy</a>, <a href="/terms.html">Terms</a>, and app description. Data collection is minimal and purpose‑limited.</p>
+      </div>
+    </section>
+
+    <section id="apps" class="card" style="margin-top:18px">
+      <h2 style="margin-top:0">App</h2>
+      <p>This section lists the app submitted to platforms (Facebook, WhatsApp Business API, etc.).</p>
+      <ul>
+        <li><strong>818 WhatsApp Notifications</strong> — Messaging integration for referred business clients to send confirmations, reminders, and notifications via WhatsApp. <em>Audience:</em> business partners only. <em>Permissions:</em> WhatsApp Business Messaging API (send/receive), basic business profile. <a href="/privacy.html#whatsapp-notifications">Privacy</a> · <a href="/terms.html#whatsapp-notifications">Terms</a></li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card" style="margin-top:18px">
+      <h2 style="margin-top:0">Contact</h2>
+      <p>Business inquiries only.</p>
+      <p>Email: <a href="mailto:derekmontesdeoca@818consultingcorp.com">contact@818consultingcorp.com</a><br/>
+         Registered: 818 Consulting Corp</p>
+    </section>
+
+    <footer>
+      <nav>
+        <a href="/privacy.html">Privacy Policy</a> ·
+        <a href="/terms.html">Terms of Service</a>
+      </nav>
+      <div>© <span id="y"></span> 818 Consulting Corp</div>
+    </footer>
+  </main>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
